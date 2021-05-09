@@ -6,9 +6,9 @@ let applyRandomColor = function(el, toned=false, light=null) {
 	if (toned) {
 		lightness = Math.round(lightness * .15);
 		if (light === true || (light === null && Math.random() < .5)) {
-			lightness += 85;
+			lightness += 80;
 		} else {
-			lightness += 10;
+			lightness += 5;
 		}
 	}
 	el.style.backgroundColor = `hsl(${hue}, ${saturation}%, ${lightness}%)`;
