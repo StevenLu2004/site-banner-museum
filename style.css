@@ -41,13 +41,34 @@ div.banner a {
 	color: inherit;
 }
 
+input[type=text],
+button,
 a.a-button {
 	padding: 10px;
 	border-radius: 4px;
 	border: 2px solid;
 	text-decoration: none;
+	font: inherit;
+	background-color: inherit;
+	color: inherit;
 }
 
 span.email i {
 	opacity: 0.4;
+}
+
+button.button-close {
+	border: none;
+	padding: 0px;
+	float: right;
+}
+button.button-close:before {
+	content: 'x';
+}
+button.button-close+* {
+	clear: both;
+}
+
+.center {
+	text-align: center;
 }

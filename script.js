@@ -34,6 +34,31 @@ let applyAllRandomColors = function() {
 	}
 };
 
+let addCloseButton = function(el) {
+	let btn = document.createElement('button');
+	btn.addEventListener('click', () => { el.style.display = 'none'; });
+	btn.classList.add('button-close');
+	el.insertBefore(btn, el.firstChild);
+};
+
+let addAllCloseButtons = function() {
+	for (let el of document.getElementsByClassName('banner')) {
+		addCloseButton(el);
+	}
+};
+
+let showAllClosedBanners = function() {
+	for (let el of document.getElementsByClassName('banner')) {
+		el.style.display = 'block';
+	}
+};
+
+let handleMailingList = function() {
+	alert('We will procrastinate from mailing you.');
+	document.getElementById('mailing-list-input').value = '';
+};
+
 window.addEventListener('load', () => {
+	addAllCloseButtons();
 	applyAllRandomColors();
 });

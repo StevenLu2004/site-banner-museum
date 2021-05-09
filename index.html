@@ -10,15 +10,15 @@
 		<header>
 			<div class='banner random-color-light'>
 				<h3>
-					This site is
+					This site
 					<a
 					href='https://github.blog/changelog/2021-04-27-github-pages-permissions-policy-interest-cohort-header-added-to-all-pages-sites/'
 					target='blank_'>
-						free from FLoC tracking
+						does not use FLoC tracking
 					</a>
 				</h3>
 			</div>
-			<div class='banner random-color-dark' style='text-align: center'>
+			<div class='banner random-color-dark center'>
 				<h3>Protect Human Rights: A website doesn't use cotton from Xinjiang, China</h3>
 			</div>
 			<div class='banner' style='color: white; background-color: red'>
@@ -36,20 +36,44 @@
 					</a></li>
 				</ul>
 			</div>
-			<div class='banner' style='color: white; background-color: black; text-align: center'>
+			<div class='banner center' style='color: white; background-color: black'>
 				<h3>BLACK LIVES MATTER</h3>
 				<p>We have a duty to speak out against racial injustice. </p>
 				<p><a class='a-button' href='https://blacklivesmatter.com' target='blank_'>
 					How to help
 				</a></p>
 			</div>
+			<div class='banner random-color-toned'>
+				<h3>This website uses cookies to optimize your experience.</h3>
+				<p>
+					<button onclick="alert('You opted in to 0/0 cookies.')">
+						<b>Accept all</b>
+					</button>
+					<button onclick="alert('You opted in to 0/0 cookies.')">
+						Accept essential
+					</button>
+					<button onclick="alert('You rejected 0/0 cookies.')">
+						Reject
+					</button>
+				</p>
+			</div>
+			<div class='banner random-color-toned'>
+				<h3>Join our mailing list</h3>
+				<p>
+					<input type='text' placeholder='john.appleseed@example.com' id='mailing-list-input' />
+					<button onclick="handleMailingList()">
+						Submit
+					</button>
+				</p>
 		</header>
 		<article>
 			<h1>The Website Banner Museum</h1>
 			<p>
-				I thought this would be fun, so, here it is. The banners are listed in
-				chronical order of their first appearance. This website is <b>completely for
-				fun</b> and <b>should NOT be taken seriously</b>.
+				I thought this would be fun, so, here it is. The banners are supposedly in
+				chronical order of their first appearance, latest first. This website is
+				<b>completely for fun</b> and <b>should NOT be taken seriously</b>. None of
+				the information-gathering options are real, and you're free to play around
+				with them. You can view source on GitHub to check it yourself.
 			</p>
 			<ul id='ul-info'>
 				<li><a
@@ -70,6 +94,9 @@
 						steven <i>dot</i> lu <i>at</i> prismsus <i>dot</i> org
 					</span>
 				</li>
+				<li><a href='javascript:void(0)' onclick="showAllClosedBanners()">
+					Show all closed banners
+				</a></li>
 			</ul>
 		</article>
 	</body>
