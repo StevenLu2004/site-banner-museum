@@ -72,3 +72,17 @@ button.button-close+* {
 .center {
 	text-align: center;
 }
+
+div.mini-banner {
+	line-height: 30px;
+	margin: 2px auto;
+	padding: 5px;
+	box-sizing: border-box;
+	max-width: 350px;
+	border-radius: 10px;
+	text-align: right;
+	color: black;
+}
+div.mini-banner:before {
+	content: 'x';
+}
